@@ -1,4 +1,4 @@
-package com.netsoft.android.timer
+package com.netsoft.android.timer.data
 
 import kotlinx.coroutines.flow.Flow
 

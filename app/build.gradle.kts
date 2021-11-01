@@ -15,8 +15,8 @@ android {
 
     defaultConfig {
         applicationId = "com.netsoft.android.challenge"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "2.0"
     }
 
     kotlinOptions {
@@ -28,6 +28,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.compose
     }
+
 }
 
 apply(plugin = "com.hubstaff.gradle.common.template")
@@ -36,5 +37,8 @@ dependencies {
     implementation(project(mapOf("path" to ":common:theme")))
     implementation(project(mapOf("path" to ":services:authentication")))
     implementation(project(mapOf("path" to ":common:resources")))
+    implementation(project(mapOf("path" to ":services:timer")))
+    implementation(project(mapOf("path" to ":storage:shared_prefs")))
+
 }
 
