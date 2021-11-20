@@ -16,43 +16,43 @@ dependencies{
 
 
 gradlePlugin {
-    plugins.register(("com.hubstaff.gradle.deps")) {
-            id = "com.hubstaff.gradle.deps"
-            implementationClass = "com.hubstaff.gradle.deps.ExperimentDependenciesPlugin"
+    plugins.register(("com.stopwatch.gradle.deps")) {
+            id = "com.stopwatch.gradle.deps"
+            implementationClass = "com.stopwatch.gradle.deps.ExperimentDependenciesPlugin"
     }
 }
 
 gradlePlugin {
-    plugins.register(("com.hubstaff.gradle.compose.dependency")) {
-        id = "com.hubstaff.gradle.compose.dependency"
-        implementationClass = "com.hubstaff.gradle.deps.ComposeDependencyPlugin"
+    plugins.register(("com.stopwatch.gradle.compose.dependency")) {
+        id = "com.stopwatch.gradle.compose.dependency"
+        implementationClass = "com.stopwatch.gradle.deps.ComposeDependencyPlugin"
     }
 }
 
 gradlePlugin {
-    plugins.register(("com.hubstaff.gradle.hilt.dependency")) {
-        id = "com.hubstaff.gradle.hilt.dependency"
-        implementationClass = "com.hubstaff.gradle.deps.HiltDependencyPlugin"
+    plugins.register(("com.stopwatch.gradle.hilt.dependency")) {
+        id = "com.stopwatch.gradle.hilt.dependency"
+        implementationClass = "com.stopwatch.gradle.deps.HiltDependencyPlugin"
     }
 }
 
 gradlePlugin {
-    plugins.register(("com.hubstaff.gradle.testing.dependency")) {
-        id = "com.hubstaff.gradle.testing.dependency"
-        implementationClass = "com.hubstaff.gradle.deps.TestingDependencyPlugin"
+    plugins.register(("com.stopwatch.gradle.testing.dependency")) {
+        id = "com.stopwatch.gradle.testing.dependency"
+        implementationClass = "com.stopwatch.gradle.deps.TestingDependencyPlugin"
     }
 }
 gradlePlugin {
-    plugins.register(("com.hubstaff.gradle.common.dependency")) {
-        id = "com.hubstaff.gradle.common.dependency"
-        implementationClass = "com.hubstaff.gradle.deps.CommonDependencyPlugin"
+    plugins.register(("com.stopwatch.gradle.common.dependency")) {
+        id = "com.stopwatch.gradle.common.dependency"
+        implementationClass = "com.stopwatch.gradle.deps.CommonDependencyPlugin"
     }
 }
 
 gradlePlugin {
-    plugins.register(("com.hubstaff.gradle.common.template")) {
-        id = "com.hubstaff.gradle.common.template"
-        implementationClass = "com.hubstaff.gradle.deps.TemplateAndroidPlugin"
+    plugins.register(("com.stopwatch.gradle.common.template")) {
+        id = "com.stopwatch.gradle.common.template"
+        implementationClass = "com.stopwatch.gradle.deps.TemplateAndroidPlugin"
     }
 }
 

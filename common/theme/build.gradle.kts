@@ -1,8 +1,8 @@
-import com.hubstaff.gradle.deps.Config
+import com.stopwatch.gradle.deps.Config
 plugins {
     id("com.android.library")
     id("kotlin-android")
-    id("com.hubstaff.gradle.compose.dependency")
+    id("com.stopwatch.gradle.compose.dependency")
 }
 
 android {
@@ -13,11 +13,11 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = com.hubstaff.gradle.deps.Versions.compose
+        kotlinCompilerExtensionVersion = com.stopwatch.gradle.deps.Versions.compose
     }
 }
 
-apply(plugin = "com.hubstaff.gradle.common.template")
+apply(plugin = "com.stopwatch.gradle.common.template")
 
 dependencies {
     implementation(project(mapOf("path" to ":common:resources")))

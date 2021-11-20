@@ -1,20 +1,20 @@
 
-import com.hubstaff.gradle.deps.Config
-import com.hubstaff.gradle.deps.Versions
+import com.stopwatch.gradle.deps.Config
+import com.stopwatch.gradle.deps.Versions
 plugins {
     id("com.android.application")
     id("kotlin-android")
     id("dagger.hilt.android.plugin")
     kotlin("kapt")
-    id("com.hubstaff.gradle.compose.dependency")
-    id("com.hubstaff.gradle.hilt.dependency")
-    id("com.hubstaff.gradle.testing.dependency")
-    id("com.hubstaff.gradle.common.dependency")
+    id("com.stopwatch.gradle.compose.dependency")
+    id("com.stopwatch.gradle.hilt.dependency")
+    id("com.stopwatch.gradle.testing.dependency")
+    id("com.stopwatch.gradle.common.dependency")
 }
 android {
 
     defaultConfig {
-        applicationId = "com.netsoft.android.challenge"
+        applicationId = "com.stopwatch.app"
         versionCode = 2
         versionName = "2.0"
     }
@@ -31,7 +31,7 @@ android {
 
 }
 
-apply(plugin = "com.hubstaff.gradle.common.template")
+apply(plugin = "com.stopwatch.gradle.common.template")
 
 dependencies {
     implementation(project(mapOf("path" to ":common:theme")))

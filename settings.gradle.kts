@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 includeBuild("plugins/deps")
-rootProject.name = "HsChallenge"
+rootProject.name = "Stopwatch-Compose"
 include(":app")
 include(":common:theme")
 include(":common:resources")
